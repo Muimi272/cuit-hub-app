@@ -55,7 +55,8 @@ git push origin v1.0.0
 
 ## Runtime behavior
 
-- The window loads CUIT Hub directly in the platform WebView.
+- The window starts on a local animated splash screen, then opens CUIT Hub in the platform WebView.
+- The splash screen checks connectivity and offers retry when offline.
 - WebView cookies, LocalStorage and login state persist between launches.
 - Site navigation stays inside the app WebView.
 - A network connection is required; a network error page is shown when the site cannot be reached.

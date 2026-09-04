@@ -1,6 +1,6 @@
 [package]
 name = "cuit-hub-app"
-version = "1.0.0"
+version = "1.0.1"
 description = "CUIT Hub installable WebView application"
 authors = ["CUIT Hub"]
 edition = "2021"

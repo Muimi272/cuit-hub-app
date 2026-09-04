@@ -1,6 +1,6 @@
 {
   "name": "cuit-hub-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "Installable CUIT Hub WebView app for desktop and Android.",
   "type": "module",

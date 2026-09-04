@@ -1,12 +1,12 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
   "productName": "CUIT Hub",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "identifier": "dev.cuit.hub",
   "build": {
-    "beforeDevCommand": "",
+    "beforeDevCommand": "npm run dev",
     "beforeBuildCommand": "npm run build",
-    "devUrl": "https://hub.cuit.dev",
+    "devUrl": "http://localhost:1420",
     "frontendDist": "../dist"
   },
   "app": {
@@ -21,7 +21,7 @@
         "minHeight": 600,
         "resizable": true,
         "fullscreen": false,
-        "url": "https://hub.cuit.dev"
+        "url": "index.html"
       }
     ],
     "security": {
