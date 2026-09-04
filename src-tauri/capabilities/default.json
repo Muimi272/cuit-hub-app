@@ -1,0 +1,15 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Desktop notification access for the CUIT Hub WebView",
+  "windows": ["main"],
+  "remote": {
+    "urls": ["https://hub.cuit.dev/*"]
+  },
+  "platforms": ["windows", "macOS", "linux"],
+  "permissions": [
+    "notification:allow-notify",
+    "notification:allow-request-permission",
+    "notification:allow-is-permission-granted"
+  ]
+}

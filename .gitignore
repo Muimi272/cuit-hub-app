@@ -1,0 +1,10 @@
+node_modules/
+dist/
+src-tauri/target/
+src-tauri/gen/
+src-tauri/.tauri/
+*.keystore
+*.jks
+google-services.json
+GoogleService-Info.plist
+keystore.properties

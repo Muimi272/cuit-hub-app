@@ -1,0 +1,19 @@
+{
+  "$schema": "../gen/schemas/mobile-schema.json",
+  "identifier": "mobile",
+  "description": "Native push access for the CUIT Hub mobile WebView",
+  "windows": ["main"],
+  "remote": {
+    "urls": ["https://hub.cuit.dev/*"]
+  },
+  "platforms": ["android", "iOS"],
+  "permissions": [
+    "notification:allow-notify",
+    "notification:allow-request-permission",
+    "notification:allow-is-permission-granted",
+    "fcm:allow-get-token",
+    "fcm:allow-request-permissions",
+    "fcm:allow-check-permissions",
+    "fcm:allow-register"
+  ]
+}
