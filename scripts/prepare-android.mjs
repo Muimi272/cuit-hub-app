@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { syncAndroidIcons } from "./sync-android-icons.mjs";
 
 const root = process.cwd();
 const androidRoot = path.join(root, "src-tauri", "gen", "android");
@@ -10,6 +11,11 @@ const keystore = process.env.ANDROID_KEYSTORE_BASE64;
 if (!fs.existsSync(appGradle)) {
   throw new Error("Android project is missing. Run `npm run android:init -- --ci` first.");
 }
+
+syncAndroidIcons({
+  sourceRoot: path.join(root, "src-tauri", "icons", "android"),
+  resourceRoot: path.join(androidRoot, "app", "src", "main", "res")
+});
 
 if (firebaseConfig) {
   const decoded = Buffer.from(firebaseConfig, "base64").toString("utf8");

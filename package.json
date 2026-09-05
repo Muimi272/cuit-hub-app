@@ -1,6 +1,6 @@
 {
   "name": "cuit-hub-app",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": true,
   "description": "Installable CUIT Hub WebView app for desktop and Android.",
   "type": "module",
@@ -15,10 +15,13 @@
     "android:dev": "tauri android dev",
     "android:build": "tauri android build",
     "android:apk": "tauri android build --apk",
-    "android:aab": "tauri android build --aab"
+    "android:aab": "tauri android build --aab",
+    "android:prepare": "node scripts/prepare-android.mjs",
+    "android:verify-apk": "node scripts/verify-android-apk-icons.mjs"
   },
   "devDependencies": {
     "@tauri-apps/cli": "^2.8.4",
+    "pngjs": "^7.0.0",
     "vite": "^7.1.3"
   }
 }

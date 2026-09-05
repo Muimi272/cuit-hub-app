@@ -49,8 +49,8 @@ For a signed release AAB, configure `ANDROID_KEYSTORE_BASE64`, `ANDROID_KEYSTORE
 The workflow in `.github/workflows/release.yml` builds Windows NSIS and Android packages. Push a version tag to publish a GitHub Release:
 
 ```bash
-git tag v1.0.0
-git push origin v1.0.0
+git tag v1.0.2
+git push origin v1.0.2
 ```
 
 ## Runtime behavior
